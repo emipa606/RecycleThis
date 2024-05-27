@@ -1,4 +1,4 @@
-# [Recycle This (Continued)]()
+# [Recycle This (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3253550009)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 Update of busted_bunnys mod https://steamcommunity.com/sharedfiles/filedetails/?id=2567877605
@@ -32,7 +32,7 @@ Unless these conditions are fully met - items won't get recycled or destroyed.
 
 # Bugs and suggestions
 
-If you encounter any errors related to this mod or notice bugs, please post bug reports in [https://steamcommunity.com/workshop/filedetails/discussion/2567877605/3060745474560090101/](bug reports section). Also feel free to post any suggestions in comments on how to make this mod better.
+[strike]If you encounter any errors related to this mod or notice bugs, please post bug reports in [https://steamcommunity.com/workshop/filedetails/discussion/2567877605/3060745474560090101/](bug reports section).[/strike] Also feel free to post any suggestions in comments on how to make this mod better.
 
 # Compatibility
 
@@ -43,10 +43,6 @@ If you encounter any errors related to this mod or notice bugs, please post bug 
 
 
 
-
-For those who wish to contribute to my BioTech DLC purchase.
-[https://boosty.to/bustedbunny] ![Image]((https://steamuserimages-a.akamaihd.net/ugc/1893226588885225061/74CC48E04ABA85EFEC132A71B213DF25A6411A23/?imw=5000&amp;imh=5000&amp;ima=fit&amp;imcolor=#000000&amp;letterbox=false) )
- 
 # Credits:
 
 Oken - he made these brand new icons for buttons.
@@ -69,3 +65,5 @@ Coding help, without these people mod would have never existed:
 -  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
 
 
+
+[https://steamcommunity.com/sharedfiles/filedetails/changelog/3253550009]![Image]((https://img.shields.io/github/v/release/emipa606/RecycleThis?label=latest%20version&style=plastic&color=9f1111&labelColor=black))

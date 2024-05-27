@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>2d6553e1-c0d6-44b4-a6ef-dbdbf1566d14</ID>
   <ModName>Recycle This (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.5.1</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,7 +12,3 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-

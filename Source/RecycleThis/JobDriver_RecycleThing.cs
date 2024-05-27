@@ -102,7 +102,8 @@ internal class JobDriver_RecycleThing : JobDriver
                 var efficiency = Target.def.recipeMaker.efficiencyStat != null
                     ? Target.GetStatValue(Target.def.recipeMaker.efficiencyStat)
                     : 1f;
-                foreach (var item in Target.SmeltProducts(efficiency))
+                var items = RecycleThis.SmeltProducts(Target, efficiency);
+                foreach (var item in items)
                 {
                     GenSpawn.Spawn(item, pawn.Position, Map);
                 }
