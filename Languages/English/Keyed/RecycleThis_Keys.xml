@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DesignatorDestroyThing>Destroy item</DesignatorDestroyThing>
   <DesignatorDestroyThingDesc>Burns chosen item at closest campfire, destroying it completely. Requires campfire or smelter to work.</DesignatorDestroyThingDesc>
@@ -8,4 +8,6 @@
   <RecycleThisNoAvailableWorkbenches>No available workbenches</RecycleThisNoAvailableWorkbenches>
   <RecycleThisItemIsUnavailable>{0} is unavailable</RecycleThisItemIsUnavailable>
   <RecycleThisCannotRefuel>Can't refuel {0}</RecycleThisCannotRefuel>
+  <RecycleThisShowGizmo>Show recycle gizmo on items</RecycleThisShowGizmo>
+  <RecycleThisCurrentModVersion>Installed mod-version: {0}</RecycleThisCurrentModVersion>
 </LanguageData>

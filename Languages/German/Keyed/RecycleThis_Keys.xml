@@ -9,4 +9,6 @@
   <RecycleThisNoAvailableWorkbenches>Keine Werkbänke vorhanden</RecycleThisNoAvailableWorkbenches>
   <RecycleThisItemIsUnavailable>{0} ist nicht verfügbar</RecycleThisItemIsUnavailable>
   <RecycleThisCannotRefuel>Kann nicht auftanken {0}</RecycleThisCannotRefuel>
+  <RecycleThisShowGizmo>Recycling-Gizmo auf Gegenständen anzeigen</RecycleThisShowGizmo>
+  <RecycleThisCurrentModVersion>Installierte Mod-Version: {0}</RecycleThisCurrentModVersion>
 </LanguageData>

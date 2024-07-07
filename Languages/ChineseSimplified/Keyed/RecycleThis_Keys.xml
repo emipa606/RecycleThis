@@ -9,4 +9,6 @@
   <RecycleThisNoAvailableWorkbenches>没有可用的工作台</RecycleThisNoAvailableWorkbenches>
   <RecycleThisItemIsUnavailable>{0}不可用</RecycleThisItemIsUnavailable>
   <RecycleThisCannotRefuel>无法加油 {0}</RecycleThisCannotRefuel>
+  <RecycleThisShowGizmo>在物品上显示回收小工具</RecycleThisShowGizmo>
+  <RecycleThisCurrentModVersion>已安装模块版本：{0}</RecycleThisCurrentModVersion>
 </LanguageData>

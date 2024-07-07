@@ -8,6 +8,11 @@ public static class ReverseDesignatorDatabase_InitDesignators
 {
     public static void Postfix(ref ReverseDesignatorDatabase __instance)
     {
+        if (!RecycleThisMod.instance.Settings.ShowGizmo)
+        {
+            return;
+        }
+
         __instance.AllDesignators.Add(new Designator_DestroyThing());
         __instance.AllDesignators.Add(new Designator_RecycleThing());
     }
