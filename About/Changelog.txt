@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.5.3 - Removed the scrap apparel recipe since the game no longer allows resources to be returned that are not defined as smeltable
+
+
 1.5.2 - Added option to not show the recycle/destroy gizmo
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 

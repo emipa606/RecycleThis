@@ -12,7 +12,7 @@ public static class RecipeDefOf
 
     public static RecipeDef BurnApparel;
 
-    public static RecipeDef RecycleThis;
+    //public static RecipeDef RecycleThis;
 
     static RecipeDefOf()
     {

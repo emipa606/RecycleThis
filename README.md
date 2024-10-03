@@ -4,6 +4,9 @@
 
 Update of busted_bunnys mod https://steamcommunity.com/sharedfiles/filedetails/?id=2567877605
 
+- Added option to no show the extra gizmos on items
+- Load after any HAR race mods to avoid compatibility issues
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
