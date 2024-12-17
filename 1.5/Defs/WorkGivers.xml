@@ -27,6 +27,7 @@
     <priorityInType>100</priorityInType>
     <verb>recycle</verb>
     <gerund>recycling</gerund>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
@@ -39,6 +40,7 @@
     <priorityInType>90</priorityInType>
     <verb>recycle</verb>
     <gerund>recycling</gerund>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
