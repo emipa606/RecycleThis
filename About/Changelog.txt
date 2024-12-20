@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.5.5 - Added support for Advance Fabricor from Advanced Mechanoids
+
+
 1.5.4 - First try to make mechs do recycling jobs. No idea why its not working
 
 
