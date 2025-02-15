@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.5.6 - Fixed flickering recycling-gizmo
+
+
 1.5.5 - Added support for Advance Fabricor from Advanced Mechanoids
 
 

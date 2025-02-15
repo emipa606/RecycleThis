@@ -1,3 +1,4 @@
+using System;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -60,7 +61,7 @@ public class Designator_RecycleThing : Designator
         var list = t.def.CostListAdjusted(t.Stuff);
         foreach (var defCountClass in list)
         {
-            if (!defCountClass.thingDef.intricate && GenMath.RoundRandom(defCountClass.count * 0.25f) > 0)
+            if (!defCountClass.thingDef.intricate && Math.Round(defCountClass.count * 0.25f) > 0)
             {
                 return true;
             }
@@ -71,6 +72,11 @@ public class Designator_RecycleThing : Designator
 
     public override AcceptanceReport CanDesignateThing(Thing t)
     {
+        if (!t.def.smeltable)
+        {
+            return false;
+        }
+
         if (Map.designationManager.DesignationOn(t, Designation) != null)
         {
             return false;
