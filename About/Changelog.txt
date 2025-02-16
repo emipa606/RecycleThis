@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.5.7 - Fixed smeltable gizmo not showing correctly
+
+
 1.5.6 - Fixed flickering recycling-gizmo
 
 

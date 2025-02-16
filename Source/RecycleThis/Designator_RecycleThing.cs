@@ -72,11 +72,6 @@ public class Designator_RecycleThing : Designator
 
     public override AcceptanceReport CanDesignateThing(Thing t)
     {
-        if (!t.def.smeltable)
-        {
-            return false;
-        }
-
         if (Map.designationManager.DesignationOn(t, Designation) != null)
         {
             return false;
