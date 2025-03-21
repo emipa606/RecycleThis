@@ -51,10 +51,7 @@ internal class JobDriver_RecycleThing : JobDriver
         doWork.initAction = delegate
         {
             var recycleSpeed = JobDefOf.RecycleThisRecycle.GetModExtension<RecycleThisModExtension>()?.RecycleSpeed;
-            if (recycleSpeed != null)
-            {
-                totalNeededWork = recycleSpeed.Value;
-            }
+            totalNeededWork = recycleSpeed ?? 1600;
 
             workLeft = totalNeededWork;
         };
@@ -99,7 +96,7 @@ internal class JobDriver_RecycleThing : JobDriver
         {
             initAction = delegate
             {
-                var efficiency = Target.def.recipeMaker.efficiencyStat != null
+                var efficiency = Target.def.recipeMaker?.efficiencyStat != null
                     ? Target.GetStatValue(Target.def.recipeMaker.efficiencyStat)
                     : 1f;
                 var items = RecycleThis.SmeltProducts(Target, efficiency);
