@@ -8,6 +8,7 @@
   <RecycleThisNoAvailableWorkbenches>No available workbenches</RecycleThisNoAvailableWorkbenches>
   <RecycleThisItemIsUnavailable>{0} is unavailable</RecycleThisItemIsUnavailable>
   <RecycleThisCannotRefuel>Can't refuel {0}</RecycleThisCannotRefuel>
+  <RecycleThisGiveComponents>Recycling can return components</RecycleThisGiveComponents>
   <RecycleThisShowGizmo>Show recycle gizmo on items</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>Installed mod-version: {0}</RecycleThisCurrentModVersion>
 </LanguageData>

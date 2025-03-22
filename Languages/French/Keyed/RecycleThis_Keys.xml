@@ -11,4 +11,5 @@
   <RecycleThisCannotRefuel>Impossible de faire le plein {0}</RecycleThisCannotRefuel>
   <RecycleThisShowGizmo>Afficher le gadget de recyclage sur les articles</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>Version installée du mod : {0}</RecycleThisCurrentModVersion>
+  <RecycleThisGiveComponents>Les composants de la boîte de recyclage sont retournés</RecycleThisGiveComponents>
 </LanguageData>

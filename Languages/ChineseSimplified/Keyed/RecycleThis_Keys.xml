@@ -11,4 +11,5 @@
   <RecycleThisCannotRefuel>无法加油 {0}</RecycleThisCannotRefuel>
   <RecycleThisShowGizmo>在物品上显示回收小工具</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>已安装模块版本：{0}</RecycleThisCurrentModVersion>
+  <RecycleThisGiveComponents>回收可回收部件</RecycleThisGiveComponents>
 </LanguageData>

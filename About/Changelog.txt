@@ -1,5 +1,9 @@
 # Changelog for RecycleThis
 
+1.5.9 - Added a setting to control if recycling should give components or similar intricate items
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.5.8 - Fixed issue with items that has missing properties
 
 

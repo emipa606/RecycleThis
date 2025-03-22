@@ -7,6 +7,7 @@ namespace RecycleThis;
 /// </summary>
 internal class RecycleThisSettings : ModSettings
 {
+    public bool GiveComponents = true;
     public bool ShowGizmo = true;
 
     /// <summary>
@@ -16,5 +17,6 @@ internal class RecycleThisSettings : ModSettings
     {
         base.ExposeData();
         Scribe_Values.Look(ref ShowGizmo, "ShowGizmo", true);
+        Scribe_Values.Look(ref GiveComponents, "GiveComponents", true);
     }
 }

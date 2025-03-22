@@ -23,6 +23,11 @@ public static class RecycleThis
         var costListAdj = def.CostListAdjusted(thing.Stuff);
         foreach (var defCountClass in costListAdj)
         {
+            if (!RecycleThisMod.instance.Settings.GiveComponents && defCountClass.thingDef.intricate)
+            {
+                continue;
+            }
+
             var num = GenMath.RoundRandom(defCountClass.count * 0.25f * efficiency);
             if (num <= 0)
             {

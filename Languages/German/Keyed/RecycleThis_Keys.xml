@@ -11,4 +11,5 @@
   <RecycleThisCannotRefuel>Kann nicht auftanken {0}</RecycleThisCannotRefuel>
   <RecycleThisShowGizmo>Recycling-Gizmo auf Gegenständen anzeigen</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>Installierte Mod-Version: {0}</RecycleThisCurrentModVersion>
+  <RecycleThisGiveComponents>Recycling kann Komponenten zurückgeben</RecycleThisGiveComponents>
 </LanguageData>

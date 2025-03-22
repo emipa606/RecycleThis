@@ -49,6 +49,7 @@ internal class RecycleThisMod : Mod
         var listing_Standard = new Listing_Standard();
         listing_Standard.Begin(rect);
         listing_Standard.CheckboxLabeled("RecycleThisShowGizmo".Translate(), ref Settings.ShowGizmo);
+        listing_Standard.CheckboxLabeled("RecycleThisGiveComponents".Translate(), ref Settings.GiveComponents);
         if (currentVersion != null)
         {
             listing_Standard.Gap();
