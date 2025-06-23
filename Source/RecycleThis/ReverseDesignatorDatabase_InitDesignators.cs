@@ -8,7 +8,7 @@ public static class ReverseDesignatorDatabase_InitDesignators
 {
     public static void Postfix(ref ReverseDesignatorDatabase __instance)
     {
-        if (!RecycleThisMod.instance.Settings.ShowGizmo)
+        if (!RecycleThisMod.Instance.Settings.ShowGizmo)
         {
             return;
         }

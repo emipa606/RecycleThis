@@ -10,7 +10,7 @@ internal class RecycleThisMod : Mod
     /// <summary>
     ///     The instance of the settings to be read by the mod
     /// </summary>
-    public static RecycleThisMod instance;
+    public static RecycleThisMod Instance;
 
     private static string currentVersion;
 
@@ -20,7 +20,7 @@ internal class RecycleThisMod : Mod
     /// <param name="content"></param>
     public RecycleThisMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         Settings = GetSettings<RecycleThisSettings>();
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
@@ -46,19 +46,19 @@ internal class RecycleThisMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
-        listing_Standard.CheckboxLabeled("RecycleThisShowGizmo".Translate(), ref Settings.ShowGizmo);
-        listing_Standard.CheckboxLabeled("RecycleThisGiveComponents".Translate(), ref Settings.GiveComponents);
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
+        listingStandard.CheckboxLabeled("RecycleThisShowGizmo".Translate(), ref Settings.ShowGizmo);
+        listingStandard.CheckboxLabeled("RecycleThisGiveComponents".Translate(), ref Settings.GiveComponents);
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("RecycleThisCurrentModVersion".Translate(currentVersion));
+            listingStandard.Label("RecycleThisCurrentModVersion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 
     public override void WriteSettings()

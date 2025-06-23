@@ -9,11 +9,11 @@ namespace RecycleThis;
 
 public static class RecycleThisUtility
 {
-    public static readonly List<ThingDef> destroyBenches;
+    private static readonly List<ThingDef> destroyBenches;
 
-    public static readonly List<ThingDef> smeltBenches;
+    private static readonly List<ThingDef> smeltBenches;
 
-    public static readonly List<ThingDef> scrapBenches;
+    private static readonly List<ThingDef> scrapBenches;
 
     private static readonly ThingRequest thingRequest;
 
@@ -71,7 +71,7 @@ public static class RecycleThisUtility
                 : JobCondition.Ongoing | JobCondition.Succeeded);
     }
 
-    private static TraverseParms TraverseParms(Pawn pawn)
+    private static TraverseParms traverseParms(Pawn pawn)
     {
         var result = default(TraverseParms);
         result.pawn = pawn;
@@ -83,7 +83,7 @@ public static class RecycleThisUtility
         return result;
     }
 
-    public static Thing ClosestSuitableWorkbench(Thing thing, Pawn pawn, List<ThingDef> benches, bool forced = false)
+    private static Thing closestSuitableWorkbench(Thing thing, Pawn pawn, List<ThingDef> benches, bool forced = false)
     {
         var list = new List<Thing>();
         foreach (var bench in benches)
@@ -92,7 +92,7 @@ public static class RecycleThisUtility
         }
 
         return GenClosest.ClosestThingReachable(thing.Position, thing.Map, thingRequest, PathEndMode.InteractionCell,
-            TraverseParms(pawn), 9999f, val, list);
+            traverseParms(pawn), 9999f, val, list);
 
         bool val(Thing bench)
         {
@@ -102,16 +102,16 @@ public static class RecycleThisUtility
 
     public static Thing ClosestSuitableWorkBenchDestroy(Thing thing, Pawn pawn, bool forced = false)
     {
-        return ClosestSuitableWorkbench(thing, pawn, destroyBenches, forced);
+        return closestSuitableWorkbench(thing, pawn, destroyBenches, forced);
     }
 
     public static Thing ClosestSuitableWorkbenchSmelt(Thing thing, Pawn pawn, bool forced = false)
     {
-        return ClosestSuitableWorkbench(thing, pawn, smeltBenches, forced);
+        return closestSuitableWorkbench(thing, pawn, smeltBenches, forced);
     }
 
     public static Thing ClosestSuitableWorkbenchScrap(Thing thing, Pawn pawn, bool forced = false)
     {
-        return ClosestSuitableWorkbench(thing, pawn, scrapBenches, forced);
+        return closestSuitableWorkbench(thing, pawn, scrapBenches, forced);
     }
 }

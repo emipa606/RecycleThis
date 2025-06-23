@@ -16,7 +16,7 @@ public class Designator_DestroyThing : Designator
         hotKey = KeyBindingDefOf.Misc4;
     }
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Orders;
 
     protected override DesignationDef Designation => DesignationDefOf.RecycleThisDestroy;
 

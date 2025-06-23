@@ -7,9 +7,9 @@ namespace RecycleThis;
 
 public class WorkGiver_DestroyThis : WorkGiver_Scanner
 {
-    protected JobDef DestroyThing => JobDefOf.RecycleThisDestroy;
+    private static JobDef DestroyThing => JobDefOf.RecycleThisDestroy;
 
-    protected DesignationDef Destroy => DesignationDefOf.RecycleThisDestroy;
+    private static DesignationDef Destroy => DesignationDefOf.RecycleThisDestroy;
 
     public override PathEndMode PathEndMode => PathEndMode.Touch;
 

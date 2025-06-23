@@ -7,9 +7,9 @@ namespace RecycleThis;
 
 public class WorkGiver_RecycleThis : WorkGiver_Scanner
 {
-    protected JobDef RecycleThing => JobDefOf.RecycleThisRecycle;
+    private static JobDef RecycleThing => JobDefOf.RecycleThisRecycle;
 
-    protected DesignationDef Recycle => DesignationDefOf.RecycleThisRecycle;
+    private static DesignationDef Recycle => DesignationDefOf.RecycleThisRecycle;
 
     public override PathEndMode PathEndMode => PathEndMode.Touch;
 

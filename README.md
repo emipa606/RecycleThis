@@ -4,7 +4,8 @@
 
 Update of busted_bunnys mod https://steamcommunity.com/sharedfiles/filedetails/?id=2567877605
 
-- Added option to no show the extra gizmos on items
+- Added option to not show the extra gizmos on items
+- Added option to not return components (or any complex items) when recycling
 - Load after any HAR race mods to avoid compatibility issues
 
 ![Image](https://i.imgur.com/pufA0kM.png)

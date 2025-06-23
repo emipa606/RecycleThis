@@ -16,11 +16,11 @@ internal class JobDriver_RecycleThing : JobDriver
     private float totalNeededWork;
     private float workLeft;
 
-    protected Thing Target => job.targetA.Thing;
+    private Thing Target => job.targetA.Thing;
 
-    protected Thing Workbench => job.targetB.Thing;
+    private Thing Workbench => job.targetB.Thing;
 
-    protected DesignationDef Designation => DesignationDefOf.RecycleThisRecycle;
+    private static DesignationDef Designation => DesignationDefOf.RecycleThisRecycle;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
@@ -55,7 +55,7 @@ internal class JobDriver_RecycleThing : JobDriver
 
             workLeft = totalNeededWork;
         };
-        doWork.tickAction = delegate
+        doWork.tickIntervalAction = delegate(int delta)
         {
             var actor = doWork.actor;
             _ = actor.jobs.curJob;
@@ -72,7 +72,7 @@ internal class JobDriver_RecycleThing : JobDriver
             }
 
             workLeft -= statValue;
-            actor.GainComfortFromCellIfPossible(true);
+            actor.GainComfortFromCellIfPossible(delta, true);
             if (workLeft <= 0f)
             {
                 doWork.actor.jobs.curDriver.ReadyForNextToil();

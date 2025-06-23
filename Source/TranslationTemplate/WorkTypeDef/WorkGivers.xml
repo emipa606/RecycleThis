@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Do low-skilled scrapping, smelting and destroying of things. -->
+  <RecycleThis_Recycle.description>Do low-skilled scrapping, smelting and destroying of things.</RecycleThis_Recycle.description>
+  <!-- EN: recycling -->
+  <RecycleThis_Recycle.gerundLabel>recycling</RecycleThis_Recycle.gerundLabel>
+  <!-- EN: recycle -->
+  <RecycleThis_Recycle.labelShort>recycle</RecycleThis_Recycle.labelShort>
+  <!-- EN: Recycler -->
+  <RecycleThis_Recycle.pawnLabel>Recycler</RecycleThis_Recycle.pawnLabel>
+  <!-- EN: Recycle at -->
+  <RecycleThis_Recycle.verb>Recycle at</RecycleThis_Recycle.verb>
+</LanguageData>

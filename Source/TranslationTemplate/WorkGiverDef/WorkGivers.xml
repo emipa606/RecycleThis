@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Destroy items -->
+  <RecycleThis_Destroy.label>Destroy items</RecycleThis_Destroy.label>
+  <!-- EN: recycling -->
+  <RecycleThis_Destroy.gerund>recycling</RecycleThis_Destroy.gerund>
+  <!-- EN: recycle -->
+  <RecycleThis_Destroy.verb>recycle</RecycleThis_Destroy.verb>
+  <!-- EN: Recycle items -->
+  <RecycleThis_Recycle.label>Recycle items</RecycleThis_Recycle.label>
+  <!-- EN: recycling -->
+  <RecycleThis_Recycle.gerund>recycling</RecycleThis_Recycle.gerund>
+  <!-- EN: recycle -->
+  <RecycleThis_Recycle.verb>recycle</RecycleThis_Recycle.verb>
+</LanguageData>

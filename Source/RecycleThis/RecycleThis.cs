@@ -23,7 +23,7 @@ public static class RecycleThis
         var costListAdj = def.CostListAdjusted(thing.Stuff);
         foreach (var defCountClass in costListAdj)
         {
-            if (!RecycleThisMod.instance.Settings.GiveComponents && defCountClass.thingDef.intricate)
+            if (!RecycleThisMod.Instance.Settings.GiveComponents && defCountClass.thingDef.intricate)
             {
                 continue;
             }

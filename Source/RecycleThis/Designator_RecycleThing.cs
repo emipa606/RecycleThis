@@ -17,7 +17,7 @@ public class Designator_RecycleThing : Designator
         hotKey = KeyBindingDefOf.Misc3;
     }
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Orders;
 
     protected override DesignationDef Designation => DesignationDefOf.RecycleThisRecycle;
 
@@ -51,7 +51,7 @@ public class Designator_RecycleThing : Designator
         }
     }
 
-    private bool SmeltingIsUseful(Thing t)
+    private static bool smeltingIsUseful(Thing t)
     {
         if (t.def.smeltProducts is { Count: > 0 })
         {
@@ -77,7 +77,7 @@ public class Designator_RecycleThing : Designator
             return false;
         }
 
-        if (!SmeltingIsUseful(t))
+        if (!smeltingIsUseful(t))
         {
             return false;
         }

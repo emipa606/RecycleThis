@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 2840100045
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 50ce23b15e76b3ae6bd06e97722b7972
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 50ce23b15e76b3ae6bd06e97722b7972
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.RecycleThis/Textures/DestroyThisDesignation_rimpy_upscaled.png
+- Assets/Data/Mlie.RecycleThis/Textures/RecycleThisGizmo_rimpy_upscaled.png
+- Assets/Data/Mlie.RecycleThis/Textures/RecycleThisDesignation_rimpy_upscaled.png
+- Assets/Data/Mlie.RecycleThis/Textures/DestroyThisDesignation.png
+- Assets/Data/Mlie.RecycleThis/Textures/RecycleThisDesignation.png
+- Assets/Data/Mlie.RecycleThis/Textures/DestroyThisGizmo_rimpy_upscaled.png
+- Assets/Data/Mlie.RecycleThis/Textures/RecycleThisGizmo.png
+- Assets/Data/Mlie.RecycleThis/Textures/DestroyThisGizmo.png
+Dependencies: []
