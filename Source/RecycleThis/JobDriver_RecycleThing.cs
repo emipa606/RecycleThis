@@ -71,7 +71,7 @@ internal class JobDriver_RecycleThing : JobDriver
                 statValue = 1f;
             }
 
-            workLeft -= statValue;
+            workLeft -= statValue * delta;
             actor.GainComfortFromCellIfPossible(delta, true);
             if (workLeft <= 0f)
             {

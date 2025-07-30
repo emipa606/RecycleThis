@@ -8,5 +8,11 @@
     "recycling",
     " destroying"
   ],
-  "LastXmlCleaning": "2025-06-23T20:18:50.6672423+02:00"
+  "LastXmlCleaning": "2025-07-30T20:08:01.0770244+02:00",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 29663,
+  "LinesOfXML": 4912,
+  "CodeBaseSize": 72
 }

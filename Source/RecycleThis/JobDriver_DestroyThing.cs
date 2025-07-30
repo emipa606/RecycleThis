@@ -58,7 +58,7 @@ internal class JobDriver_DestroyThing : JobDriver
         {
             var actor = doWork.actor;
             _ = actor.jobs.curJob;
-            workLeft -= 1f;
+            workLeft -= delta;
             actor.GainComfortFromCellIfPossible(delta, true);
             if (workLeft <= 0f)
             {
