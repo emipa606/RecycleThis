@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.6.2 - Added loadorder to stop issues with TinyWorkbenchs
+
+
 1.6.1 - Fix for slow work, thanks tpsco21
 
 
