@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.6.3 - Added loadorder for RimForge
+
+
 1.6.2 - Added loadorder to stop issues with TinyWorkbenchs
 
 
