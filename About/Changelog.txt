@@ -1,5 +1,8 @@
 # Changelog for RecycleThis
 
+1.6.5 - Fixed load-order issue
+
+
 1.6.4 - Added loadorder for Void Extractor
 
 
