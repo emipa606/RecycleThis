@@ -1,5 +1,9 @@
 # Changelog for RecycleThis
 
+1.6.6 - Added a modsetting for the amount of resources returned
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.6.5 - Fixed load-order issue
 
 

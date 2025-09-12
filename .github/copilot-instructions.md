@@ -1,40 +1,32 @@
-# Copilot Instructions for RimWorld Modding Project: RecycleThis
+# Copilot Instructions for Recycle This (Continued) Mod
 
 ## Mod Overview and Purpose
-
-"RecycleThis" is a RimWorld mod that introduces enhanced functionalities for recycling and destroying various items within the game. The mod aims to provide players with more efficient and immersive ways to manage their inventory and recycle resources, thus enhancing the overall gameplay experience.
+**Recycle This (Continued)** is a RimWorld mod aimed at simplifying the process of disposing of unwanted weapons and apparel after raids or other events. It eliminates the cumbersome task of setting bills on workbenches by allowing users to recycle or destroy items directly through order icons. The mod is designed to be as seamless as possible, integrating smoothly with vanilla and modded RimWorld experiences while keeping gameplay balanced.
 
 ## Key Features and Systems
-
-- **Recycling System**: Players can efficiently recycle items into their base components using the new 'Recycle' designator.
-- **Destruction System**: Allows for the removal of unwanted items with the 'Destroy' designator.
-- **Integrated with Job System**: New jobs are created for pawns to either recycle or destroy items.
-- **Customization Options**: The mod includes settings to adjust the recycling and destruction processes according to player preferences.
+- **Order Gizmos:** Adds two new order icons:
+  - **Destroy Item:** Sends selected items to the nearest building capable of destruction (e.g., campfires, cremators).
+  - **Recycle Item:** Directs items to the closest workbench where they can be recycled, yielding part of their resources based on vanilla calculations.
+- **Customization Options:** Players can toggle options to hide additional gizmos or prevent the return of complex components during recycling.
+- **Job Integration:** Introduces a new crafting-related job visible in Fluffy's Work Tab, merging additional functionality smoothly into existing RimWorld mechanics.
 
 ## Coding Patterns and Conventions
-
-- **Class Naming**: Classes follow PascalCase convention and are generally grouped by functionality (e.g., `Designator_RecycleThing`, `JobDriver_RecycleThing`).
-- **Static Classes for Definitions**: Definitions like designations and jobs are stored in static classes ending with `DefOf` (e.g., `DesignationDefOf`, `JobDefOf`).
-- **Mod Extension**: Use of `DefModExtension` with `RecycleThisModExtension` to extend definitions conveniently.
+- **Static Classes for Definitions**: Usage of `public static class NameOfDef` for organizing definition constants like `DesignationDefOf`, `EffecterDefOf`, `JobDefOf`, and more.
+- **Designator Classes**: Classes such as `Designator_DestroyThing` and `Designator_RecycleThing` manage the assignment and execution of destruction and recycling actions respectively.
+- **JobDriver Classes**: `JobDriver_DestroyThing` and `JobDriver_RecycleThing` encapsulate the logic for handling the respective jobs, ensuring they execute under appropriate conditions.
 
 ## XML Integration
-
-The mod interacts with RimWorld using XML for defining game content like jobs, designations, and recipes. Ensure all necessary definitions have matching XML entries to prevent any null reference errors at runtime. Review the XML files for proper elements like `<ThingDef>`, `<RecipeDef>`, and `<JobDef>` with appropriate attributes.
+- **DefModExtension**: Utilized in `RecycleThisModExtension` for mod configuration and settings integration.
+- **Configurable Settings**: `RecycleThisSettings` class allows for easy toggling of gizmo visibility and component return functionality.
 
 ## Harmony Patching
-
-**Harmony** library is used for modifying existing game methods, allowing the mod to introduce custom logic without altering the original game files. If new functionality needs to be added, ensure that Harmony patches are well-documented and targeted only at the necessary game methods to maintain performance and compatibility. Create patches in an intuitive manner using pre and post-fix methods.
+- The mod likely leverages Harmony for runtime patches to integrate seamlessly with existing game mechanics, enhancing compatibility with both vanilla and other modded assets. When modifying core behaviors, ensure Harmony is used to create non-destructive patches.
 
 ## Suggestions for Copilot
+- **Contextual Code Generation**: Use Copilot to generate code snippets for new features like adding more customizable options based on the `RecycleThisSettings` structure.
+- **Integration Scripts**: Assist with Harmony patch creation, especially if new functionality requires altering or extending vanilla methods.
+- **Efficient Loops and Checks**: Optimize iteration through item lists and job queues, making use of efficient C# practices such as LINQ where applicable.
+- **Error Handling**: Generate code that gracefully handles edge cases, such as missing buildings for destruction or recycling, improving user experience and reducing errors.
+- **Documentation Generation**: Help with inline comments and XML documentation within the code to facilitate maintenance and further mod development.
 
-1. **Auto-completion for Designation Logic**: Implement typical logic structures for designators used in RimWorld when suggesting completions in `Designator_DestroyThing` and `Designator_RecycleThing`.
-   
-2. **Job System Integration**: Provide suggestions for setting up new jobs adhering to the RimWorld pawn job structure in `JobDriver_DestroyThing` and `JobDriver_RecycleThing`.
-
-3. **Efficient ForEach Loops**: Suggest efficient patterns for processing collections, as seen in methods containing `foreach`, to ensure performance remains optimal.
-
-4. **XML Tag Consistency**: When creating new XML content, provide suggestions to maintain tag consistency and correct structure to avoid validation errors.
-
-5. **Harmony Patch Creation**: Make informed suggestions for creating Harmony patches, focusing on methods typical of managing mod behaviour (e.g., `ReverseDesignatorDatabase_InitDesignators`).
-
-By following these structured guidelines, `Copilot` can effectively aid in developing and extending the RimWorld RecycleThis mod, ensuring clean, maintainable, and efficient code development practices.
+By adhering to these details and utilizing GitHub Copilot effectively, developers can maintain and enhance the *Recycle This (Continued)* mod, ensuring its longevity and compatibility in the ever-evolving modding landscape of RimWorld.

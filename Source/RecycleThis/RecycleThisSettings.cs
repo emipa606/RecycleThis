@@ -8,6 +8,7 @@ namespace RecycleThis;
 internal class RecycleThisSettings : ModSettings
 {
     public bool GiveComponents = true;
+    public float ReturnPercent = 0.25f;
     public bool ShowGizmo = true;
 
     /// <summary>
@@ -16,6 +17,7 @@ internal class RecycleThisSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
+        Scribe_Values.Look(ref ReturnPercent, "ReturnPercent", 0.25f);
         Scribe_Values.Look(ref ShowGizmo, "ShowGizmo", true);
         Scribe_Values.Look(ref GiveComponents, "GiveComponents", true);
     }

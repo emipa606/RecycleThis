@@ -50,6 +50,9 @@ internal class RecycleThisMod : Mod
         listingStandard.Begin(rect);
         listingStandard.CheckboxLabeled("RecycleThisShowGizmo".Translate(), ref Settings.ShowGizmo);
         listingStandard.CheckboxLabeled("RecycleThisGiveComponents".Translate(), ref Settings.GiveComponents);
+        Settings.ReturnPercent = listingStandard.SliderLabeled(
+            "RecycleThisReturnPercent".Translate(Settings.ReturnPercent.ToStringPercent()), Settings.ReturnPercent, 0,
+            1f);
         if (currentVersion != null)
         {
             listingStandard.Gap();

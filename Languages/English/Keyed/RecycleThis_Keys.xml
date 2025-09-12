@@ -11,4 +11,5 @@
   <RecycleThisGiveComponents>Recycling can return components</RecycleThisGiveComponents>
   <RecycleThisShowGizmo>Show recycle gizmo on items</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>Installed mod-version: {0}</RecycleThisCurrentModVersion>
+  <RecycleThisReturnPercent>Amount of resources returned: {0}</RecycleThisReturnPercent>
 </LanguageData>

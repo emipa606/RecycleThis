@@ -12,4 +12,5 @@
   <RecycleThisShowGizmo>Recycling-Gizmo auf Gegenständen anzeigen</RecycleThisShowGizmo>
   <RecycleThisCurrentModVersion>Installierte Mod-Version: {0}</RecycleThisCurrentModVersion>
   <RecycleThisGiveComponents>Recycling kann Komponenten zurückgeben</RecycleThisGiveComponents>
+  <RecycleThisReturnPercent>Menge der zurückgegebenen Ressourcen: {0}</RecycleThisReturnPercent>
 </LanguageData>

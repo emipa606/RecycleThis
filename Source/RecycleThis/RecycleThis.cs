@@ -28,7 +28,8 @@ public static class RecycleThis
                 continue;
             }
 
-            var num = GenMath.RoundRandom(defCountClass.count * 0.25f * efficiency);
+            var num = GenMath.RoundRandom(defCountClass.count * RecycleThisMod.Instance.Settings.ReturnPercent *
+                                          efficiency);
             if (num <= 0)
             {
                 continue;
