@@ -12,8 +12,6 @@ public static class RecipeDefOf
 
     public static RecipeDef BurnApparel;
 
-    //public static RecipeDef RecycleThis;
-
     static RecipeDefOf()
     {
         DefOfHelper.EnsureInitializedInCtor(typeof(RimWorld.RecipeDefOf));

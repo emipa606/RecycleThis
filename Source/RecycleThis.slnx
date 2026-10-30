@@ -6,4 +6,19 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="RecycleThis/RecycleThis.csproj" />
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/Designations.xml" />
+    <File Path="../1.7/Defs/Jobs_Work.xml" />
+    <File Path="../1.7/Defs/WorkGivers.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/DesignationCategories.xml" />
+    <File Path="../1.7/Patches/WorkTypes.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/RecycleThis_Keys.xml" />
+  </Folder>
 </Solution>

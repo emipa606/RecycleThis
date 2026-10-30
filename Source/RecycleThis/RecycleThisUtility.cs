@@ -36,10 +36,6 @@ public static class RecycleThisUtility
                     x.defName is "Make_Apparel_BasicShirt" or "Make_Apparel_TribalA"))
             {
                 scrapBenches.Add(thingDef);
-                //_ = thingDef.AllRecipes;
-                //var currentRecipes = (List<RecipeDef>)allRecipesCachedInfo.GetValue(thingDef);
-                //currentRecipes.Insert(0, RecipeDefOf.RecycleThis);
-                //allRecipesCachedInfo.SetValue(thingDef, currentRecipes);
             }
 
             if (thingDef.AllRecipes.Any(x => x == RecipeDefOf.SmeltWeapon || x == RecipeDefOf.BurnApparel))

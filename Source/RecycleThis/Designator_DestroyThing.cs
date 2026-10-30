@@ -20,22 +20,14 @@ public class Designator_DestroyThing : Designator
 
     protected override DesignationDef Designation => DesignationDefOf.RecycleThisDestroy;
 
-    public override AcceptanceReport CanDesignateCell(IntVec3 c)
+    public override AcceptanceReport CanDesignateCell(IntVec3 loc)
     {
-        if (!c.InBounds(Map) || c.Fogged(Map))
+        if (!loc.InBounds(Map) || loc.Fogged(Map))
         {
             return false;
         }
 
-        foreach (var thing in c.GetThingList(Map))
-        {
-            if (thing != null && CanDesignateThing(thing))
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return loc.GetThingList(Map).Any(thing => thing != null && CanDesignateThing(thing));
     }
 
     public override void DesignateSingleCell(IntVec3 c)

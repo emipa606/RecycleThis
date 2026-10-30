@@ -16,7 +16,6 @@ public static class RecycleThis
         RuntimeHelpers.RunClassConstructor(typeof(RecycleThisUtility).TypeHandle);
     }
 
-
     public static IEnumerable<Thing> SmeltProducts(Thing thing, float efficiency)
     {
         var def = thing.def;
